@@ -1,4 +1,4 @@
-import { FetchError } from "../../utils/errors.js";
+import {FetchError} from "../utils/errors.js"
 
 const API_URL = "https://api.euskadi.eus/culture/events/v1.0/events/upcoming";
 
@@ -26,5 +26,6 @@ async function fetchData(){
 }
 
 export {
+    API_URL,
     fetchData
 }
