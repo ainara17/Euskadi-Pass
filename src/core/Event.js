@@ -1,5 +1,6 @@
 import { API_URL } from "./services/api.js";
 
+
 async function getEvents(limit = 10, page = 1) {
     try {
         const url = new URL(API_URL);
@@ -49,7 +50,8 @@ function getCleanEvent(eventData) {
     if (eventData.images) {
         imagen = eventData.images.imageUrl || (eventData.images[0] && eventData.images[0].imageUrl) || "";
     }
-
+    
+    
     return {
         id: eventData.id,
         name: eventData.nameEs || eventData.nameEu,

@@ -14,7 +14,6 @@ async function loadPage(page, limit) {
     eventListSection.replaceChildren();
 
 
-    const offset = getOffsetFromPage(page, limit);
     const events = await getEvents(page, limit);
 
     if (!events || !events.items) {
